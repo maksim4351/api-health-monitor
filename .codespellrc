@@ -1,0 +1,6 @@
+# Codespell configuration
+[codespell]
+skip = *.pyc,*.pyo,*.pyd,*.so,*.egg,*.egg-info,.git,*.swp,*.swo,__pycache__,.pytest_cache,htmlcov,dist,build
+count =
+quiet-level = 3
+

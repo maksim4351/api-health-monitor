@@ -1,0 +1,50 @@
+# Example configuration with notifications
+output_format: table
+interval: 60  # Check every minute
+log_file: monitoring.log
+
+# Notification settings
+notifications:
+  # Email notifications
+  email:
+    enabled: true
+    smtp_host: smtp.gmail.com
+    smtp_port: 587
+    smtp_user: your-email@gmail.com
+    smtp_password: your-app-password  # Use App Password for Gmail
+    from: your-email@gmail.com
+    to:
+      - admin@example.com
+      - team@example.com
+    subject_prefix: "[API Monitor]"
+  
+  # Push notifications (browser)
+  push:
+    enabled: true
+  
+  # Notification behavior settings
+  notify_on_failure: true      # Notify on errors
+  notify_on_recovery: true     # Notify on recovery
+  notify_on_all_failures: false  # Notify on every error (false = only on state change)
+
+# List of APIs to monitor
+apis:
+  - name: Google
+    url: https://www.google.com
+    method: GET
+    timeout: 5.0
+    expected_status: 200
+  
+  - name: GitHub API
+    url: https://api.github.com
+    method: GET
+    timeout: 5.0
+    expected_status: 200
+    headers:
+      User-Agent: api-monitor
+  
+  - name: JSONPlaceholder
+    url: https://jsonplaceholder.typicode.com/posts/1
+    method: GET
+    timeout: 5.0
+    expected_status: 200

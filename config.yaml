@@ -1,0 +1,62 @@
+output_format: table
+# interval: 60  # Uncomment for periodic monitoring (seconds)
+# log_file: monitoring.log  # Uncomment for logging to file
+
+# Notification settings (optional)
+# notifications:
+#   email:
+#     enabled: false
+#     smtp_host: smtp.gmail.com
+#     smtp_port: 587
+#     smtp_user: your-email@gmail.com
+#     smtp_password: your-app-password
+#     from: your-email@gmail.com
+#     to: [admin@example.com]
+#   push:
+#     enabled: true  # Browser push notifications
+#   notify_on_failure: true
+#   notify_on_recovery: true
+
+apis:
+- name: Google
+  url: https://www.google.com
+  method: GET
+  timeout: 5.0
+  expected_status: 200
+- name: GitHub API
+  url: https://api.github.com
+  method: GET
+  timeout: 5.0
+  expected_status: 200
+  headers:
+    User-Agent: api-monitor
+- name: JSONPlaceholder
+  url: https://jsonplaceholder.typicode.com/posts/1
+  method: GET
+  timeout: 5.0
+  expected_status: 200
+- name: HTTPBin Status
+  url: https://httpbin.org/status/200
+  method: GET
+  timeout: 5.0
+  expected_status: 200
+- name: Reddit API
+  url: https://www.reddit.com/r/python.json
+  method: GET
+  timeout: 5.0
+  expected_status: 200
+- name: CoinGecko API
+  url: https://api.coingecko.com/api/v3/ping
+  method: GET
+  timeout: 5.0
+  expected_status: 200
+- name: Twitter API
+  url: https://api.twitter.com/1.1/help/configuration.json
+  method: GET
+  timeout: 5.0
+  expected_status: 200
+- name: Joke API
+  url: https://official-joke-api.appspot.com/random_joke
+  method: GET
+  timeout: 5.0
+  expected_status: 200

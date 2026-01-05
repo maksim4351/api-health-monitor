@@ -1,0 +1,34 @@
+# Configuration for continuous API monitoring
+# Use: api-monitor watch config_monitoring.yaml
+
+# Check interval in seconds (60 = every minute)
+interval: 60
+
+# Log file
+log_file: monitor.log
+
+# Output format
+output_format: table
+
+# List of APIs to monitor
+apis:
+  - name: Google
+    url: https://www.google.com
+    method: GET
+    timeout: 5.0
+    expected_status: 200
+
+  - name: GitHub API
+    url: https://api.github.com
+    method: GET
+    timeout: 5.0
+    expected_status: 200
+    headers:
+      User-Agent: api-monitor
+
+  - name: JSONPlaceholder
+    url: https://jsonplaceholder.typicode.com/posts/1
+    method: GET
+    timeout: 5.0
+    expected_status: 200
+

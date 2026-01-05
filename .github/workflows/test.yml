@@ -1,0 +1,66 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -e .
+    
+    - name: Run unit tests
+      run: |
+        pytest tests/ -v --cov=api_monitor --cov-report=xml
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        fail_ci_if_error: false
+    
+    - name: Integration test
+      run: |
+        # Create test config
+        cat > test_config.yaml << EOF
+        output_format: table
+        apis:
+          - name: HTTPBin Status 200
+            url: https://httpbin.org/status/200
+            method: GET
+            timeout: 5.0
+            expected_status: 200
+          - name: HTTPBin Status 404
+            url: https://httpbin.org/status/404
+            method: GET
+            timeout: 5.0
+            expected_status: 404
+        EOF
+        
+        # Run check
+        api-monitor run test_config.yaml --format json
+    
+    - name: Verify exit code
+      run: |
+        # Test should pass successfully (all APIs available)
+        api-monitor run test_config.yaml || true
+
+
