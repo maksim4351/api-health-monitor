@@ -46,13 +46,22 @@ test_config.yaml
 *.csv
 reports/
 
-<<<<<<< HEAD
 # Development files
 del/
 
 # Coverage reports
 htmlcov/
 .coverage
-=======
 
->>>>>>> master
+# Development tools
+.cursorrules
+.codespellrc
+ADD_TO_GIT.bat
+
+# Git internal files (should not be in repo)
+tests/COMMIT_EDITMSG
+tests/config
+tests/description
+tests/HEAD
+tests/index
+RELEASE_NOTES_v1.0.0.md
