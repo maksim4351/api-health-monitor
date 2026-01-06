@@ -352,11 +352,7 @@ Press `Ctrl+C` in the command line window where monitoring is running.
 - **Repository:** https://github.com/maksim4351/api-health-monitor
 - **Documentation:** https://github.com/maksim4351/api-health-monitor#readme
 - **Issues:** https://github.com/maksim4351/api-health-monitor/issues
-<<<<<<< HEAD
-- **Discussions:** https://github.com/maksim4351/api-health-monitor/discussions
-=======
 - **Discussions:** https://github.com/maksim4351/api-health-monitor/discussions *(enable in Settings → Features)*
->>>>>>> master
 
 ---
 
