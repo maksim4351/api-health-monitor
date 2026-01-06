@@ -1,0 +1,13 @@
+# Default owners for everything in the repo
+* @maksim4351
+
+# Documentation
+*.md @maksim4351
+docs/ @maksim4351
+
+# Tests
+tests/ @maksim4351
+
+# CI/CD
+.github/ @maksim4351
+

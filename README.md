@@ -336,7 +336,11 @@ Quick start:
 - [Testing Documentation](tests/README.md)
 - [Usage Examples](QUICKSTART.md)
 - [Roadmap](#-roadmap)
+<<<<<<< HEAD
 - [Report a Bug](https://github.com/maksim4351/api-health-monitor/issues/new)
+=======
+- [Report a Bug](https://github.com/maksim4351/api-health-monitor/issues/new?template=bug_report.md)
+>>>>>>> master
 
 ## 📄 License
 
@@ -350,7 +354,11 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 - 🌐 **Web Monitoring:** [WEB_MONITORING_GUIDE.md](WEB_MONITORING_GUIDE.md) - complete web dashboard guide
 - 🤖 **AI Index:** [AI_INDEX.md](AI_INDEX.md) - information for AI systems
 - 🐛 **Issues:** https://github.com/maksim4351/api-health-monitor/issues
+<<<<<<< HEAD
 - 💬 **Discussions:** https://github.com/maksim4351/api-health-monitor/discussions
+=======
+- 💬 **Discussions:** https://github.com/maksim4351/api-health-monitor/discussions *(enable in Settings → Features)*
+>>>>>>> master
 
 ---
 
@@ -503,11 +511,27 @@ apis:
 
 ## 🎯 Roadmap
 
+<<<<<<< HEAD
 - [x] Periodic check support (scheduler) ✅
 - [ ] Prometheus metrics export
 - [ ] Webhook notifications on errors
 - [ ] Authentication support (OAuth, API keys)
 - [ ] Charts and history visualization
+=======
+### ✅ Completed
+- [x] Periodic check support (scheduler) ✅
+- [x] Web dashboard with real-time monitoring ✅
+- [x] Email and Push notifications ✅
+- [x] Result caching for performance ✅
+- [x] OpenAPI/Swagger documentation ✅
+- [x] History storage (last 100 checks) ✅
+
+### 🚧 Planned Features
+- [ ] Prometheus metrics export
+- [ ] Webhook notifications on errors
+- [ ] Authentication support (OAuth, API keys)
+- [ ] Charts and history visualization (graphs for latency trends)
+>>>>>>> master
 
 ## 💡 Usage Examples
 
@@ -528,7 +552,11 @@ See [examples/README.md](examples/README.md) for detailed examples and integrati
 - 🐛 **Report a Bug:** [Create Issue](https://github.com/maksim4351/api-health-monitor/issues/new?template=bug_report.md)
 - 💡 **Suggest Feature:** [Create Feature Request](https://github.com/maksim4351/api-health-monitor/issues/new?template=feature_request.md)
 - ❓ **Ask Question:** [Create Question](https://github.com/maksim4351/api-health-monitor/issues/new?template=question.md)
+<<<<<<< HEAD
 - 💬 **Discussions:** [GitHub Discussions](https://github.com/maksim4351/api-health-monitor/discussions)
+=======
+- 💬 **Discussions:** [GitHub Discussions](https://github.com/maksim4351/api-health-monitor/discussions) *(enable in Settings → Features)*
+>>>>>>> master
 - 📖 **Documentation:** [README](https://github.com/maksim4351/api-health-monitor#readme)
 
 **📧 Feedback Form:**

@@ -134,5 +134,9 @@ Contributions welcome! See CONTRIBUTING.md for guidelines.
 ## Support
 
 - **Issues**: https://github.com/maksim4351/api-health-monitor/issues
+<<<<<<< HEAD
 - **Discussions**: https://github.com/maksim4351/api-health-monitor/discussions
+=======
+- **Discussions**: https://github.com/maksim4351/api-health-monitor/discussions *(enable in Settings → Features)*
+>>>>>>> master
 

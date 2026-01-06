@@ -46,9 +46,13 @@ test_config.yaml
 *.csv
 reports/
 
+<<<<<<< HEAD
 # Development files
 del/
 
 # Coverage reports
 htmlcov/
 .coverage
+=======
+
+>>>>>>> master

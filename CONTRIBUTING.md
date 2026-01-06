@@ -114,6 +114,12 @@ pytest tests/test_checker.py::TestCheckAPI
 
 ## ❓ Questions?
 
+<<<<<<< HEAD
 If you have questions, open an [Issue](https://github.com/maksim4351/api-health-monitor/issues) or discuss in Discussions.
+=======
+If you have questions, open an [Issue](https://github.com/maksim4351/api-health-monitor/issues) or use [GitHub Discussions](https://github.com/maksim4351/api-health-monitor/discussions) (if enabled).
+
+**Note:** If Discussions link doesn't work, enable it in repository Settings → General → Features → Discussions.
+>>>>>>> master
 
 Thank you for your contribution! 🎉
