@@ -46,4 +46,9 @@ test_config.yaml
 *.csv
 reports/
 
+# Development files
+del/
 
+# Coverage reports
+htmlcov/
+.coverage
