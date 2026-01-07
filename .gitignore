@@ -53,11 +53,6 @@ del/
 htmlcov/
 .coverage
 
-# Development tools
-.cursorrules
-.codespellrc
-ADD_TO_GIT.bat
-
 # Git internal files (should not be in repo)
 tests/COMMIT_EDITMSG
 tests/config

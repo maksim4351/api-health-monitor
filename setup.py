@@ -13,8 +13,8 @@ setup(
     description="Lightweight Python CLI tool for monitoring API availability, performance, and health checks. Perfect for developers, DevOps teams, and CI/CD pipelines. Features web dashboard, email notifications, caching, and OpenAPI documentation.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="maksim4351",
+    author_email="maksim4351@users.noreply.github.com",
     url="https://github.com/maksim4351/api-health-monitor",
     project_urls={
         "Bug Reports": "https://github.com/maksim4351/api-health-monitor/issues",
