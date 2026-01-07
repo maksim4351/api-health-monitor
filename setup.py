@@ -14,7 +14,6 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="maksim4351",
-    author_email="maksim4351@users.noreply.github.com",
     url="https://github.com/maksim4351/api-health-monitor",
     project_urls={
         "Bug Reports": "https://github.com/maksim4351/api-health-monitor/issues",
